@@ -1,38 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;  
+  font-weight: 500;
+}
+.main-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+ul{
+  list-style-type: auto;
+  text-align: left;
+  margin-left: 45px;
+}
+
 .App {
   text-align: center;
+  /* border: 3px solid #0080ff; */
+  border-radius: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+  background-color: #0080ff;
+  padding: 10px 0;
+  color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-Section{
+  margin: 25px;
+}
+.bill-amount{
+  margin-top: 25px;
+}
+.bill-amount .bill{  
+  width: 350px;
+  padding: 5px;
+  margin-top: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#tip{
+  min-width: 192px;
+  padding: 5px 0;  
+
 }
 
-.App-link {
-  color: #61dafb;
+.customer,.add-customer-btn{  
+  width: 350px;
+  padding: 5px;
+  margin-bottom: 25px;
+}
+.add-customer-btn{
+  background: #0080ff;
+  border: 1px solid #255c93;
+  border-radius: 3px;
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: #63636333 0px 2px 8px 0px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.customer-list{
+  margin: 25px 0;
+}
+.tip-customer{
+  margin-bottom: 25px;  
+}  
+.tip-customer .data-table{
+  padding: 15px;
+}
+.tip-customer button{  
+  background: #0080ff;
+  border: 1px solid #255c93;
+  border-radius: 3px;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 5px 10px;
+  box-shadow: #63636333 0px 2px 8px 0px;
+}
+#tip-and-customer{
+  cursor: pointer;
+}
+hr{
+  margin: 15px 0;  
+  width: 350px;
+  margin-left: 25px;
+}
+table{
+  width: 100%;
+  border: 1px solid grey;
+}
+td,tr,th{  
+  border: 1px solid grey;
+  outline: none;
+}
+footer{
+  background-color: black;
+  color: #ffffff;
+  padding: 5px;
+  text-transform: uppercase;
 }

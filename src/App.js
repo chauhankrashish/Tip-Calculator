@@ -29,7 +29,7 @@ function App() {
     const totaltip = () => {
       let sum = 0;
       tips.map((e) => {
-        sum = sum + e;
+        return sum = sum + e;
       })
       setTotalTips(sum)
 
